@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /*    border: 1px solid red;*/
 }
 
 header {
@@ -9,12 +10,16 @@ header {
     background-color: #eebb44;
     width: 100%;
     height: 100px;
-    padding-left: 10px;
+    /*    padding-left: 10px;*/
 }
 
 .header-container {
     display: block;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /*    margin-left: 14%;*/
 }
 
 .content {
@@ -26,21 +31,20 @@ h1 {
     width: 100%;
     Margin: 0px 0px;
     padding-top: 15px;
+    /*    max-width: 900px;*/
 }
 
 h2 {
     font-weight: 150%;
     margin: 0px 0px;
+    padding: 0px 0px;
 }
 
 h3 {
-    /*
-    margin-left: 10px;
-margin-right: 10px;
-*/
     font-weight: 150%;
+    margin: 0px 0px;
+    font-weight: 100;
     font-size: 1em;
-    Margin: 0px 0px;
     padding-top: 10px;
 }
 
