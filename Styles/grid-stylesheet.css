@@ -1,16 +1,9 @@
-<<<<<<< HEAD
-    * {
+* {
     box-sizing: border-box;
 }
 
 
 /* Grid measurements:
-=======
-                        * {
-                        box-sizing: border-box;
-                    }
-                    /* Grid measurements:
->>>>>>> master
  *
  *   960px wide including 12 gutters (half gutters on both edges)
  *
@@ -22,7 +15,6 @@
  *   so 960 + 20 + 20 => 1000px
  *
  **/
-<<<<<<< HEAD
 
 .row {
     max-width: 1000px;
@@ -30,6 +22,9 @@
     padding-right: 20px;
     margin: 0 auto;
 }
+
+
+/* Clearfix */
 
 .row::before,
 .row::after {
@@ -41,79 +36,49 @@
     clear: both;
 }
 
+.col-3,
+.col-4,
+.col-6,
 .col-12 {
     float: left;
-    padding-left: 1.04166666%;
-    padding-right: 1.04166666%;
-    margin: 0px 0px;
-    width: 100%;
-    height: auto;
-}
-
-.col-4 {
-    float: left;
     /* Gutters:
-=======
-                    
-                    .row {
-                        max-width: 1000px;
-                        padding-left: 20px;
-                        padding-right: 20px;
-                        margin: 0 auto;
-                    }
-                    
-                    .row::before,
-                    .row::after {
-                        display: table;
-                        content: '';
-                    }
-                    
-                    .row::after {
-                        clear: both;
-                    }
-                    
-                    .col-4 {
-                        float: left;
-                        /* Gutters:
->>>>>>> master
-* Each column is padded by half-a-gutter on each side,
-*
-* Half a gutter is 10px, 10/960 (context) = 1.041666%
-*
-*/
-<<<<<<< HEAD
+   * Each column is padded by half-a-gutter on each side,
+   *
+   * Half a gutter is 10px, 10/960 (context) = 1.041666%
+   *
+   */
     padding-left: 1.04166666%;
     padding-right: 1.04166666%;
-    margin: 0 auto;
-    margin-top: 25px;
-    width: 100%;
-    height: auto;
 }
 
 
 /* Mobile defaults */
 
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
+    width: 100%;
+}
+
+
+/* Non-mobile, grid */
+
 @media only screen and (min-width: 640px) {
-    /* 3 columns */
+    /* 3 columns, 3/12 in % */
+    .col-3 {
+        width: 25%;
+    }
+    /* 4 columns */
     .col-4 {
         width: 33.33%;
     }
+    /* 6 columns */
+    .col-6 {
+        width: 50%;
+    }
+    /* 12 columns */
     .col-12 {
         width: 100%;
     }
-=======
-                        padding-left: 1.04166666%;
-                        padding-right: 1.04166666%;
-                        margin: 0 auto;
-                        margin-top: 25px;
-                        width: 100%;
-                        height: auto;
-                    }
-                    /* Mobile defaults */
-                    
-                    @media only screen and (min-width: 640px) {
-                        /* 3 columns */
-                        .col-4 {
-                            width: 33.33%;
-                        }
->>>>>>> master
+}
